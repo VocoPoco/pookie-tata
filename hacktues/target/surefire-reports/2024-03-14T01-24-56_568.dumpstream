@@ -1,5 +1,0 @@
-# Created at 2024-03-14T01:24:56.791
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Programing\HackTues 10\pookie-tata\hacktues\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
