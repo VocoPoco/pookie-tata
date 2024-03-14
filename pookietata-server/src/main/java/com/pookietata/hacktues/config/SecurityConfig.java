@@ -1,8 +1,8 @@
 package com.example.polls.config;
 
-import com.example.polls.security.CustomUserDetailsService;
-import com.example.polls.security.JwtAuthenticationEntryPoint;
-import com.example.polls.security.JwtAuthenticationFilter;
+import com.pookietata.hacktues.security.CustomUserDetailsService;
+import com.pookietata.hacktues.security.JwtAuthenticationEntryPoint;
+import com.pookietata.hacktues.security.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
