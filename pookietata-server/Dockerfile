@@ -1,5 +1,7 @@
 #### Stage 1: Build the application
-FROM openjdk:8-jdk-alpine as build
+# As of the last update, OpenJDK 21 might not be available on Alpine.
+# You may need to use a different base image if you specifically need OpenJDK 21.
+FROM openjdk:17-alpine as build
 
 # Set the current working directory inside the image
 WORKDIR /app
@@ -24,7 +26,8 @@ RUN ./mvnw package -DskipTests
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 #### Stage 2: A minimal docker image with command to run the app
-FROM openjdk:8-jre-alpine
+# Using the same version of JDK for JRE to avoid compatibility issues.
+FROM openjdk:17-jre-alpine
 
 ARG DEPENDENCY=/app/target/dependency
 
