@@ -11,12 +11,16 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #00ff00);
+.logo.valorant:hover {
+  filter: drop-shadow(0 0 2em #e62e00);
 }
 
 .logo.LOL:hover {
   filter: drop-shadow(0 0 2em #ff00ff);
+}
+
+.logo.CS:hover {
+  filter: drop-shadow(0 0 2em #fff);
 }
 
 
