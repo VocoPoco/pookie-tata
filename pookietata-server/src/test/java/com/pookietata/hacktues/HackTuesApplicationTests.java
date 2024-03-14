@@ -1,10 +1,10 @@
-package src.test.java.com.pookietata.hacktues;
+package com.pookietata.hacktues;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class KanbanBoardApplicationTests {
+class HackTuesApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5e5b26c-9d34-49b9-8e28-2eb6e850640e" name="Changes" comment="created the Dockefile for the client side" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="33b819db-b184-4629-b4f6-4ead40150b51" />
+        <option name="url" value="https://github.com/VocoPoco/pookie-tata" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2deWGz1jGY4TlZ1yZ6y9Pw4sLjG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/login",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/school/dsk/HackTues10_2024/pookietata-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\school\dsk\HackTues10_2024\pookietata-client\ReactPookies\public" />
+      <recent name="D:\school\dsk\HackTues10_2024\pookietata-client\ReactPookies\src\assets" />
+      <recent name="D:\school\dsk\HackTues10_2024\pookietata-client" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="pookie-tata" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="pookie-tata" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5e5b26c-9d34-49b9-8e28-2eb6e850640e" name="Changes" comment="" />
+      <created>1710368932931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710368932931</updated>
+      <workItem from="1710368934306" duration="472000" />
+      <workItem from="1710369462806" duration="2168000" />
+      <workItem from="1710371749041" duration="11784000" />
+      <workItem from="1710385533458" duration="2393000" />
+      <workItem from="1710388021729" duration="3264000" />
+    </task>
+    <task id="LOCAL-00001" summary="React base start with vite">
+      <option name="closed" value="true" />
+      <created>1710371608333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710371608333</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Logos">
+      <option name="closed" value="true" />
+      <created>1710384431174</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710384431174</updated>
+    </task>
+    <task id="LOCAL-00003" summary="switched version 21 from 8 of openjdk">
+      <option name="closed" value="true" />
+      <created>1710385399515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710385399515</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added .DS_Store to .gitignore">
+      <option name="closed" value="true" />
+      <created>1710385424542</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710385424542</updated>
+    </task>
+    <task id="LOCAL-00005" summary="created the Dockefile for the client side">
+      <option name="closed" value="true" />
+      <created>1710387445085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710387445085</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="React base start with vite" />
+    <MESSAGE value="Logos" />
+    <MESSAGE value="switched version 21 from 8 of openjdk" />
+    <MESSAGE value="added .DS_Store to .gitignore" />
+    <MESSAGE value="created the Dockefile for the client side" />
+    <option name="LAST_COMMIT_MESSAGE" value="created the Dockefile for the client side" />
+  </component>
+</project>

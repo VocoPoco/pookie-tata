@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
+import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -21,6 +21,8 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
+    @NaturalId
     @Column(nullable = false, length = 20)
     private String name;
 
