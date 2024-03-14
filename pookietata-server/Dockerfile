@@ -1,7 +1,5 @@
 #### Stage 1: Build the application
-# As of the last update, OpenJDK 21 might not be available on Alpine.
-# You may need to use a different base image if you specifically need OpenJDK 21.
-FROM openjdk:17-alpine as build
+FROM openjdk:8-alpine as build
 
 # Set the current working directory inside the image
 WORKDIR /app
@@ -10,12 +8,13 @@ WORKDIR /app
 COPY mvnw .
 COPY .mvn .mvn
 
+# Ensure mvnw is executable
+RUN chmod +x mvnw
+
 # Copy the pom.xml file
 COPY pom.xml .
 
 # Build all the dependencies in preparation to go offline.
-# This is a separate step so the dependencies will be cached unless
-# the pom.xml file has changed.
 RUN ./mvnw dependency:go-offline -B
 
 # Copy the project source
@@ -27,7 +26,7 @@ RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 #### Stage 2: A minimal docker image with command to run the app
 # Using the same version of JDK for JRE to avoid compatibility issues.
-FROM openjdk:17-jre-alpine
+FROM openjdk:8-jre-alpine
 
 ARG DEPENDENCY=/app/target/dependency
 
