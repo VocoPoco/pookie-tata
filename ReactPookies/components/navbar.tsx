@@ -1,23 +1,29 @@
-// src/App.tsx
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"; // Assuming Navbar is ready
-import Home from "./pages/Home"; // Your initial App component renamed to Home.tsx
-import AboutUs from "./pages/AboutUs";
-import Settings from "./pages/Settings";
-import "./App.css";
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const App: React.FC = () => {
+type NavBarProps = {
+  isLoggedIn: boolean;
+  userProfilePic?: string;
+};
+
+const NavBar: React.FC<NavBarProps> = ({ isLoggedIn, userProfilePic }) => {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about-us" component={AboutUs} />
-        <Route path="/settings" component={Settings} />
-      </Switch>
-    </Router>
+    <nav className="navbar">
+      <div className="nav-links">
+        <Link to="/">Home Page</Link>
+        <Route path="/about" element={<About />} />
+        <Link to="/settings">Settings</Link>
+      </div>
+      <div className="login-section">
+        {isLoggedIn ? (
+          <img src={userProfilePic} alt="Profile" className="profile-pic" />
+        ) : (
+          <Link to="/login">Log In</Link>
+        )}
+      </div>
+    </nav>
   );
 };
 
-export default App;
+export default NavBar;
