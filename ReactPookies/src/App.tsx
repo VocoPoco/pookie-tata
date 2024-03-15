@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import "./App.css";
 import lolLogo from "/icons8-league-of-legends.svg";
 import NavBar from "../components/navbar";

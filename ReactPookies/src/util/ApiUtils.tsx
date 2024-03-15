@@ -1,6 +1,6 @@
 import { API_BASE_URL } from '../constants';
 
-const ACCESS_TOKEN = '123';
+const ACCESS_TOKEN = 'accessToken';
 
 interface RequestOptions {
     url: string;
@@ -49,11 +49,6 @@ export const login = (loginRequest: LoginRequest): Promise<any> => {
         url: API_BASE_URL + "/auth/signin",
         method: 'POST',
         body: JSON.stringify(loginRequest),
-    }).then(data => {
-        if (data.accessToken) {
-            localStorage.setItem(ACCESS_TOKEN, data.accessToken);
-        }
-        return data;
     });
 };
 
