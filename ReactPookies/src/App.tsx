@@ -1,46 +1,39 @@
-import { useState } from "react";
-import ValorantLogo from "../public/valorant-logo-play-2.svg";
-import lolLogo from "/icons8-league-of-legends.svg";
-import CSLogo from "../public/CSLogo.svg";
 import "./App.css";
-import Navbar from "../components/navbar";
+import lolLogo from "/icons8-league-of-legends.svg";
+import NavBar from "../components/navbar";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <Navbar />
-
-      <div>
-        <a href="" target="_blank" rel="noopener noreferrer">
-          <img
-            src={ValorantLogo}
-            className="logo valorant "
-            alt="Valorant logo"
-          />
-        </a>
-        <a href="../pages/About.tsx" target="_blank" rel="noopener noreferrer">
-          <img
-            src={lolLogo}
-            className="logo LOL"
-            alt="Mental Health Facilities logo"
-          />
-        </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
-          <img src={CSLogo} className="logo CS " alt="CS logo" />
-        </a>
-      </div>
-      {/* Explore your limits */}
-      {/* <h1>MHF + LOL</h1>
-      Mental Health Facilities
-      <div className="card"> */}
-      {/*    <button onClick={() => setCount(count + 1)}>*/}
-      {/*        count is {count}*/}
-      {/*    </button>*/}
-      {/*</div>*/}
-    </>
+    <div className="app-container">
+      <NavBar />
+      <MainContent />
+      <RightPanel />
+    </div>
   );
-}
+};
+
+const MainContent = () => {
+  return (
+    <div className="main-content">
+      {/* Main content goes here */}
+      <a href="../pages/About.tsx" target="_blank" rel="noopener noreferrer">
+        <img
+          src={lolLogo}
+          className="logo LOL logo-spin"
+          alt="Mental Health Facilities logo"
+        />
+      </a>
+    </div>
+  );
+};
+
+const RightPanel = () => {
+  return (
+    <div className="right-panel">
+      {/* Right panel content goes here */}
+      Additional content or panels here.
+    </div>
+  );
+};
 
 export default App;

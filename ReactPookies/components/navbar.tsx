@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-// import logoImage from "../Images/Logo.png";
+import "./Contacts.css";
 import "./navbar.css";
+// import logoImage from "../Images/Logo.png"; // Ensure this path is correct
 
-const Navbar = () => {
-  const [popupVisible, setPopupVisible] = useState(false);
-
-  const togglePopup = () => {
-    setPopupVisible(!popupVisible);
+const NavBar = () => {
+  // Function to handle the popup - placeholder for your own implementation
+  const myFunction = () => {
+    // Logic to show/hide the popup
   };
 
   return (
-    <nav className="Navbar locked">
+    <nav className="sidebar locked">
       <div className="logo_items flex">
         <span className="nav_image_Logo">
-          {/* <img src={logoImage} alt="logo" /> */}
+          {/* <img src={logoImage} alt="logo_img" /> */}
         </span>
         <span className="logo_name">MEOWIFY</span>
-        <i className="bx bx-lock-alt" id="lock-icon" title="Unlock Navbar"></i>
-        <i className="bx bx-x" id="navbar-close"></i>
+        <i className="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+        <i className="bx bx-x" id="sidebar-close"></i>
       </div>
 
       <div className="menu_container">
@@ -52,18 +52,16 @@ const Navbar = () => {
                 <span>About us</span>
               </Link>
             </li>
-            <li className="item link flex" onClick={togglePopup}>
+            <li className="item link flex" onClick={myFunction}>
               <i className="bx bx-info-circle"></i>
               <div className="popup">
                 {" "}
                 Contacts
-                {popupVisible && (
-                  <span className="popuptext" id="myPopup">
-                    Email: nrgoranov@gmail.com
-                    <br />
-                    Phone: ********
-                  </span>
-                )}
+                <span className="popuptext" id="myPopup">
+                  Email: nrgoranov@gmail.com
+                  <br />
+                  Phone: ********
+                </span>
               </div>
             </li>
           </ul>
@@ -73,4 +71,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
