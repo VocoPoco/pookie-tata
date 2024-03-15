@@ -1,11 +1,15 @@
+/* App.css */
 
+/* Existing styles... */
+
+/* NavBar Styles */
 .sidebar {
   position: fixed;
   left: 0;
   top: 0;
   width: 250px;
   height: 100%;
-  background: #242424;
+  background: #f0f0f0;
   overflow-y: auto;
 }
 

@@ -1,5 +1,17 @@
 import "./App.css";
 import lolLogo from "/icons8-league-of-legends.svg";
+import NavBar from "../components/navbar";
+import LoginPage from "./user/login/login";
+
+const App = () => {
+  return (
+    <div className="app-container">
+      <NavBar />
+      <MainContent />
+      <RightPanel />
+    </div>
+  );
+};
 
 const MainContent = () => {
   return (
