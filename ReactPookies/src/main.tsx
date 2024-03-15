@@ -7,22 +7,42 @@ import LoginPage from "./user/login/login.tsx";
 import Home from "../pages/Home.tsx";
 
 const router = createBrowserRouter([
-  // {
+  {
+    path: "/api/",
+    element: <LoginPage />,
+    children: [
+      {
+        path: "auth/",
+        children: [
+          {
+            path: "signin/",
+            element: <LoginPage />
+          },
+          {
+            path: "signup/",
+            element: <LoginPage />
+          }
+        ]
+      },
+      {
+        path: "home/",
+        element: <App />
+      }
+    ]
+
+  },  // {
   //   path: "/api/",
   //   element: <Home />,
   // },
   // {
-  //   path: "/api/auth/signin",
+  //   path: "/pasd",
   //   element: <LoginPage />,
   // },
   // {
   //   path: "/api/auth/signup",
   //   element: <LoginPage />,
   // },
-  {
-    path: "/api/auth/signin",
-    element: <LoginPage />,
-  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
