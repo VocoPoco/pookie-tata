@@ -1,4 +1,3 @@
-// src/pages/AboutUs.tsx
 import React from "react";
 
 const AboutUs: React.FC = () => {
