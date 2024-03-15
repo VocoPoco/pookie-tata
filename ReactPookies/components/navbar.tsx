@@ -17,8 +17,6 @@ const NavBar = () => {
           {/* <img src={logoImage} alt="logo_img" /> */}
         </span>
         <span className="logo_name">MEOWIFY</span>
-        <i className="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
-        <i className="bx bx-x" id="sidebar-close"></i>
       </div>
 
       <div className="menu_container">
@@ -55,8 +53,7 @@ const NavBar = () => {
             <li className="item link flex" onClick={myFunction}>
               <i className="bx bx-info-circle"></i>
               <div className="popup">
-                {" "}
-                Contacts
+              Contacts
                 <span className="popuptext" id="myPopup">
                   Email: nrgoranov@gmail.com
                   <br />

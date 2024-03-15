@@ -3,12 +3,12 @@ import lolLogo from "/icons8-league-of-legends.svg";
 import NavBar from "../components/navbar";
 
 const App = () => {
-  return (
-    <div className="app-container">
+  return (//<div className="app-container">
+    <>  
       <NavBar />
       <MainContent />
       <RightPanel />
-    </div>
+      </>// </div>
   );
 };
 
@@ -27,13 +27,29 @@ const MainContent = () => {
   );
 };
 
-const RightPanel = () => {
+const RightPanel: React.FC = () => {
   return (
     <div className="right-panel">
-      {/* Right panel content goes here */}
-      Additional content or panels here.
+      <div className="bounties">
+        Bounties
+        {/* Bounties content or panels go here */}
+      </div>
+      <div className="daily-quests">
+        Daily Quests
+        {/* Daily quests content or panels go here */}
+      </div>
     </div>
   );
 };
+
+const CompetetiveCgallengeList = () => {
+  let list = []
+  return (
+    <div className="mid-list">
+
+    </div>
+  );
+};
+
 
 export default App;

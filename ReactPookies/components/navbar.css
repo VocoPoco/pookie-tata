@@ -1,63 +1,92 @@
-/* App.css */
-
-/* Existing styles... */
-
-/* NavBar Styles */
 .sidebar {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 250px;
-  height: 100%;
-  background: #f0f0f0;
-  overflow-y: auto;
+  max-height: 100vh; /* Changed height to max-height */
+  background-color: #242424;
+  color: #fff;
+  overflow: auto;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2000;
 }
 
-.logo_items {
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.close {
+  transform: translateX(-250px);
+}
+
+.sidebar .logo_items {
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
 }
 
-.nav_image_Logo img {
-  height: 50px;
+.sidebar .nav_image_Logo img {
+  max-height: 50px;
 }
 
 .logo_name {
-  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 30%;
 }
 
 .menu_container {
-  padding: 1rem;
-}
-
-.menu_items {
-  list-style: none;
-  padding: 0;
-}
-
-.menu_item .item {
-  padding: 0.5rem 0;
-}
-
-.link {
-  text-decoration: none;
-  color: #333;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.link:hover {
-  background-color: #e0e0e0;
+.nav-links a, .menu_container a {
+  padding: 10px 15px;
+  color: #ddd;
+  text-decoration: none;
+  /* display: block; */
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.link.flex {
-  justify-content: flex-start;
+.nav-links a:hover, .menu_container a:hover,
+.nav-links a.active, .menu_container a.active {
+  background-color: #555;
+  color: #fff;
 }
 
-.link i {
-  padding-right: 0.5rem;
+/* Popup styling */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-/* Add more styles as needed... */
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  transition: visibility 0.2s ease-in-out;
+}
+
+.popup .popuptext.show {
+  visibility: visible;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 1000;
+}
