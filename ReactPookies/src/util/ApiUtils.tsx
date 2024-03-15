@@ -21,7 +21,6 @@ const request = (options: RequestOptions): Promise<any> => {
 
     const defaults = { headers: headers };
     const requestOptions = { ...defaults, ...options };
-
     return fetch(requestOptions.url, requestOptions)
         .then(response =>
             response.json().then(json => {
