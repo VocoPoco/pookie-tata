@@ -3,7 +3,7 @@ import React from "react";
 import ValorantLogo from "../public/valorant-logo-play-2.svg";
 import lolLogo from "/icons8-league-of-legends.svg";
 import CSLogo from "../public/CSLogo.svg";
-import "../App.css";
+import "../src/App";
 
 const Home: React.FC = () => {
   return (

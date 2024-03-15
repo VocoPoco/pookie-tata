@@ -3,15 +3,16 @@ import ValorantLogo from "../public/valorant-logo-play-2.svg";
 import lolLogo from "/icons8-league-of-legends.svg";
 import CSLogo from "../public/CSLogo.svg";
 import "./App.css";
-// import Navbar from "../components/navbar.tsx";
+import Navbar from "../components/navbar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Navbar />
+
       <div>
-        {/* <Navbar /> */}
         <a href="" target="_blank" rel="noopener noreferrer">
           <img
             src={ValorantLogo}
@@ -19,11 +20,7 @@ function App() {
             alt="Valorant logo"
           />
         </a>
-        <a
-          href="https://www.leagueoflegends.com/en-gb/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="../pages/About.tsx" target="_blank" rel="noopener noreferrer">
           <img
             src={lolLogo}
             className="logo LOL"
