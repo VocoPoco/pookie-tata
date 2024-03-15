@@ -8,15 +8,19 @@ import Home from "../pages/Home.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/api/",
     element: <Home />,
   },
   {
-    path: "/login",
+    path: "api/auth/signin",
     element: <LoginPage />,
   },
   {
-    path: "/home",
+    path: "api/auth/signup",
+    element: <LoginPage />,
+  },
+  {
+    path: "api/home",
     element: <App />,
   },
 ]);
