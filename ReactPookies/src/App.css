@@ -54,6 +54,16 @@ body{
 /* Existing styles... */
 
 /* NavBar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  z-index: 1000;
+}
 
 .logo_items {
   display: flex;
@@ -190,30 +200,3 @@ body{
 
 
 /* Add more styles as needed... */
-/*RightPanel*/
-/* RightPanel.css */
-.right-panel {
-  display: flex;
-  flex-direction: column;
-  margin-left:70%;
-  gap: 20px; /* Adjust the space between the two sections */
-  padding: 20px; /* Padding around the entire right panel */
-  background-color: #242424; /* Light background color for the whole right panel */
-}
-
-.bounties, .daily-quests {
-  padding: 10px;
-  border-radius: 8px; /* Rounded corners for a modern look */
-  background-color: #fff; /* White background for each section */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-}
-
-.bounties {
-  color: #007bff; /* Blue color for the bounties section */
-}
-
-.daily-quests {
-  color: #28a745; /* Green color for the daily quests section */
-}
-
-/*RightPanel*/

@@ -5,12 +5,12 @@ import NavBar from "../components/navbar";
 import LoginPage from "./user/login/login";
 
 const App = () => {
-  return (//<div className="app-container">
-    <>  
+  return (
+    <div className="app-container">
       <NavBar />
       <MainContent />
       <RightPanel />
-      </>// </div>
+    </div>
   );
 };
 
@@ -29,29 +29,13 @@ const MainContent = () => {
   );
 };
 
-const RightPanel: React.FC = () => {
+const RightPanel = () => {
   return (
     <div className="right-panel">
-      <div className="bounties">
-        Bounties
-        {/* Bounties content or panels go here */}
-      </div>
-      <div className="daily-quests">
-        Daily Quests
-        {/* Daily quests content or panels go here */}
-      </div>
+      {/* Right panel content goes here */}
+      Additional content or panels here.
     </div>
   );
 };
-
-const CompetetiveCgallengeList = () => {
-  let list = []
-  return (
-    <div className="mid-list">
-
-    </div>
-  );
-};
-
 
 export default App;
