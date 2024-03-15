@@ -12,15 +12,15 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "api/auth/signin",
+    path: "/api/auth/signin",
     element: <LoginPage />,
   },
   {
-    path: "api/auth/signup",
+    path: "/api/auth/signup",
     element: <LoginPage />,
   },
   {
-    path: "api/home",
+    path: "/api/home",
     element: <App />,
   },
 ]);
