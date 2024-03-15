@@ -1,28 +1,5 @@
-import { useState } from 'react';
 import "./App.css";
 import lolLogo from "/icons8-league-of-legends.svg";
-import NavBar from "../components/navbar";
-import LoginPage from "./user/login/login";
-
-const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const handleLoginSuccess = () => {
-    setIsLoggedIn(true);
-  };
-
-  if (!isLoggedIn) {
-    return <LoginPage onLogin={handleLoginSuccess} />;
-  }
-
-  return (
-    <div className="app-container">
-      <NavBar />
-      <MainContent />
-      <RightPanel />
-    </div>
-  );
-};
 
 const MainContent = () => {
   return (
