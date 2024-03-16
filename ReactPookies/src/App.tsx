@@ -1,38 +1,18 @@
-import "./App.css";
-import lolLogo from "/icons8-league-of-legends.svg";
-import NavBar from "../components/navbar";
-import LoginPage from "./user/login/login";
+import React from 'react';
+import './App.css';
+import NavBar from '../components/navbar'; // Adjust the import path as necessary
+import RightPanel from '../components/RightPanel';
+import VideoBackground from '../components/VideoBackground';
+import "../components/VideoBackground.css"
+// Optionally import MainContent if you decide to use it
+// import MainContent from './components/MainContent';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="app-container">
+    < div className="main">
       <NavBar />
-      <MainContent />
+      <VideoBackground />
       <RightPanel />
-    </div>
-  );
-};
-
-const MainContent = () => {
-  return (
-    <div className="main-content">
-      {/* Main content goes here */}
-      <a href="../pages/About.tsx" target="_blank" rel="noopener noreferrer">
-        <img
-          src={lolLogo}
-          className="logo LOL logo-spin"
-          alt="Mental Health Facilities logo"
-        />
-      </a>
-    </div>
-  );
-};
-
-const RightPanel = () => {
-  return (
-    <div className="right-panel">
-      {/* Right panel content goes here */}
-      Additional content or panels here.
     </div>
   );
 };

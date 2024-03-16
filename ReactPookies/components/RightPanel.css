@@ -1,0 +1,43 @@
+/* RightPanel.css */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #dfdbe1; */
+  width: 300px; /* Width of the right panel */
+  height: auto; /* Auto height based on content */
+  position: fixed; /* Fixed position */
+  top: 50%; /* Center vertically */
+  right: 5vh; /* Align to the right side of the screen */
+  transform: translateY(-50%); /* Center align vertically */
+  gap: 20px;
+  padding: 20px;
+  background-color:linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  z-index: 1000; /* Ensure it floats above other content */
+}
+
+.section {
+  flex: 1; /* Each section expands to fill the available space */
+  padding: 20px;
+  border-radius: 8px ;
+  /* border: 1px solid #dfdbe1; */
+  background-color:#242424;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bounties {
+  color: #ffe8d8;
+}
+
+.daily-quests {
+  color: #ffe8d8;
+}
+
+.weekly-quests {
+  color:#ffe8d8;
+}

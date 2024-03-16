@@ -1,35 +1,35 @@
-/* App.css */
-
-/* Existing styles... */
-
-/* NavBar Styles */
 .sidebar {
   position: fixed;
-  left: 0;
   top: 0;
-  width: 250px;
-  height: 100%;
-  background: #f0f0f0;
-  overflow-y: auto;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #242424;
+  padding: 10px;
+  /* border-right: 1px solid azure; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+
 }
 
 .logo_items {
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-}
-
-.nav_image_Logo img {
-  height: 50px;
 }
 
 .logo_name {
   font-size: 1.5rem;
+  font-weight: bold;
+  color: azure;
 }
 
 .menu_container {
+  height: 90vh;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu_items {
@@ -37,8 +37,24 @@
   padding: 0;
 }
 
+.nav-links a,
+.menu_container a {
+  padding: 10px 15px;
+  color: #ddd;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
 .menu_item .item {
   padding: 0.5rem 0;
+}
+
+.nav-links a:hover,
+.menu_container a:hover,
+.nav-links a.active,
+.menu_container a.active {
+  background-color: #555;
+  color: #fff;
 }
 
 .link {
@@ -52,6 +68,32 @@
   background-color: #e0e0e0;
 }
 
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  transition: visibility 0.2s ease-in-out;
+}
+
+.popup .popuptext.show {
+  visibility: visible;
+}
+
 .link.flex {
   justify-content: flex-start;
 }
@@ -60,4 +102,54 @@
   padding-right: 0.5rem;
 }
 
-/* Add more styles as needed... */
+ Link:active,
+ Link:hover {
+  outline: 0;
+ }
+
+ .link-button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  padding: 6px;
+  text-decoration: none;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.link-button span {
+  padding: 6px 14px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.link-button:hover span {
+  transform: scale(1.1); /* Adjust scale value as desired */
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-button:active {
+  transform: scale(0.9);
+}
+.btn1 {
+  margin-bottom: 8px;
+  }
+  .btn2 {
+  margin-top: 8px;
+  }
+  .btn3 {
+    margin-top: 8px;
+    }
+
+    .btn4 {
+      margin-top: 60vh;
+    }

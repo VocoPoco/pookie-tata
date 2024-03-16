@@ -67,27 +67,7 @@ button:focus-visible {
   }
 }
  */
-.app-container {
-  display: flex;
-  align-items: stretch;
-  height: 100vh;
-}
 
-.sidebar {
-  width: 200px;
-  border-right: 1px solid #ccc;
-  padding: 10px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 8px;
-  cursor: pointer;
-}
 
 .main-content {
   flex-grow: 1;
@@ -101,14 +81,3 @@ button:focus-visible {
   height: 100%;
 }
 
-.right-panel {
-  width: 200px;
-  border-left: 1px solid #ccc;
-  padding: 10px;
-}
-
-.quests, .bounties {
-  border: 1px solid #ccc;
-  margin-bottom: 8px;
-  padding: 5px;
-}

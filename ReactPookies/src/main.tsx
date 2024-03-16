@@ -7,20 +7,20 @@ import LoginPage from "./user/login/login.tsx";
 import Home from "../pages/Home.tsx";
 
 const router = createBrowserRouter([
+  // {
+  //   path: "/api/",
+  //   element: <Home />,
+  // },
+  // {
+  //   path: "api/auth/signin",
+  //   element: <LoginPage />,
+  // },
+  // {
+  //   path: "api/auth/signup",
+  //   element: <LoginPage />,
+  // },
   {
-    path: "/api/",
-    element: <Home />,
-  },
-  {
-    path: "api/auth/signin",
-    element: <LoginPage />,
-  },
-  {
-    path: "api/auth/signup",
-    element: <LoginPage />,
-  },
-  {
-    path: "api/home",
+    path: "/",
     element: <App />,
   },
 ]);
