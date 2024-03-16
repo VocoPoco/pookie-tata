@@ -1,72 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Contacts.css";
-import "./navbar.css";
-// import logoImage from "../Images/Logo.png"; // Ensure this path is correct
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './navbar.css'; // Make sure this CSS file includes all the styles you need
 
 const NavBar = () => {
-  // Function to handle the popup - placeholder for your own implementation
-  const myFunction = () => {
-    // Logic to show/hide the popup
+  const [coinsAmount, setCoinsAmount] = useState(0); // Initialize coins amount with useState
+  const navigate = useNavigate();
+
+  // Function to increment coins amount by 100
+  const incrementCoins = () => {
+    setCoinsAmount(coinsAmount + 100);
+  };
+
+  const handleIconClick = (internalPath: string, externalUrl?: string) => {
+    if (externalUrl) {
+      window.open(externalUrl, '_blank'); // Open external link in new tab
+    } else {
+      navigate(internalPath); // Navigate internally within the app
+    }
   };
 
   return (
-    <nav className="sidebar locked">
-      <div className="logo_items flex">
-        <span className="nav_image_Logo">
-          {/* <img src={logoImage} alt="logo_img" /> */}
-        </span>
-        <span className="logo_name">MEOWIFY</span>
-        <i className="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
-        <i className="bx bx-x" id="sidebar-close"></i>
+    <nav className="sidebar">
+      <div className="logo_items">
+        <span className="logo_name">QUESTBET</span>
       </div>
-
       <div className="menu_container">
-        <div className="menu_items">
-          <ul className="menu_item">
-            <div className="menu_title flex">
-              <span className="title">Menu</span>
-            </div>
-            <li className="item">
-              <Link to="/" className="link flex">
-                <i className="bx bx-home-alt"></i>
-                <span>Home</span>
-              </Link>
-            </li>
-            <li className="item">
-              <Link to="/products" className="link flex">
-                <i className="bx bx-grid-alt"></i>
-                <span>Products</span>
-              </Link>
-            </li>
-          </ul>
-
-          <ul className="menu_item">
-            <div className="menu_title flex">
-              <span className="title">Information</span>
-              <span className="line"></span>
-            </div>
-            <li className="item">
-              <Link to="/about-us" className="link flex">
-                <i className="bx bx-id-card"></i>
-                <span>About us</span>
-              </Link>
-            </li>
-            <li className="item link flex" onClick={myFunction}>
-              <i className="bx bx-info-circle"></i>
-              <div className="popup">
-                {" "}
-                Contacts
-                <span className="popuptext" id="myPopup">
-                  Email: nrgoranov@gmail.com
-                  <br />
-                  Phone: ********
-                </span>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <ul className="menu_items">
+          <li className="item btn1" onClick={() => navigate('/')}>
+            <span className="link-button flex shadow"><i className="bx bx-home-alt"></i><span>Home</span></span>
+          </li>
+          <li className="item btn2" onClick={() => navigate('/games')}>
+            <span className="link-button flex shadow"><i className="bx bx-grid-alt"></i><span>Games</span></span>
+          </li>
+          <li className="item btn3" onClick={() => navigate('/aboutus')}>
+            <span className="link-button flex shadow"><i className="bx bx-id-card"></i><span>About Us</span></span>
+          </li>
+          <li className="item btn4" onClick={incrementCoins}>
+            <span className="link-button flex"><i className='bx bxl-bitcoin'></i><span>{coinsAmount}</span></span>
+          </li>
+          {/* Additional links as needed */}
+        </ul>
       </div>
+      {/* Popup or other components as needed */}
     </nav>
   );
 };

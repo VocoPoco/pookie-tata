@@ -5,7 +5,7 @@
   text-align: center;
 }
 body{
-  background: #242424;
+  background-image: linear-gradient(144deg, #242424, #5B42F3 50%, #242424);
 }
 
 .logo {
@@ -27,21 +27,6 @@ body{
 }
 
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
@@ -50,27 +35,12 @@ body{
   color: #888;
 }
 
-/* App.css */
-/* Existing styles... */
-
-/* NavBar Styles */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  background-color: #fff;
-  border-right: 1px solid #ddd;
-  z-index: 1000;
-}
-
 .logo_items {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid azure;
 }
 
 .nav_image_Logo img {
@@ -86,13 +56,7 @@ body{
   cursor: pointer;
 }
 
-#lock-icon {
-  margin-right: 10px;
-}
 
-#sidebar-close {
-  display: none; /* Adjust as needed for the closing logic */
-}
 
 .menu_container {
   margin-top: 1rem;
@@ -106,6 +70,7 @@ body{
 .menu_item .item {
   padding: 10px;
   cursor: pointer;
+  color: #dfdbe1;
 }
 
 .link {
@@ -119,9 +84,9 @@ body{
   background-color: #f0f0f0;
 }
 
-.link.flex {
+/* .link.flex {
   justify-content: start;
-}
+} */
 
 .link i {
   margin-right: 0.5rem;
@@ -130,6 +95,7 @@ body{
 .menu_title .title {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color:#dfdbe1;
 }
 
 .menu_title .line {
@@ -163,23 +129,6 @@ body{
 }
 /* App.css */
 
-/* Assuming the sidebar has a width of 250px */
-.app-container {
-  display: flex;
-  min-height: 100vh; /* Full viewport height */
-  padding-left: 250px; /* Space for the sidebar */
-  box-sizing: border-box;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px; /* Width of the sidebar */
-  height: 100vh; /* Full viewport height */
-  background-color: #fff;
-  /* rest of your styles */
-}
 
 /* Main content styles */
 .main-content {
@@ -187,16 +136,3 @@ body{
   padding: 1rem;
   /* rest of your styles */
 }
-
-/* Right panel styles */
-.right-panel {
-  width: 200px; /* Adjust the width as necessary */
-  padding: 1rem;
-  text-emphasis-color: red;
-  /* rest of your styles */
-}
-
-/* Ensure the rest of your styles are correct */
-
-
-/* Add more styles as needed... */
