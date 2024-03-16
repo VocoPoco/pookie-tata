@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
   
   // Example logged-in state, replace with your actual authentication logic
-  const isLoggedIn = true;
+  const isLoggedIn = false;
 
   const handleIconClick = (internalPath: string, externalUrl?: string) => {
     if (!isLoggedIn) {

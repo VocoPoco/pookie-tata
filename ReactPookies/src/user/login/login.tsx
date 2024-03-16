@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { login } from '../../util/ApiUtils';
 import { useNavigate } from 'react-router-dom';
+import './login.css'; // Import your CSS file
 
 const LoginPage = () => {
     const [usernameOrEmail, setUsernameOrEmail] = useState('');
@@ -19,9 +20,9 @@ const LoginPage = () => {
     };
 
     return (
-        <div style={{ margin: 'auto', width: '300px', padding: '20px' }}>
+        <div className="login-container">
             <form onSubmit={handleLogin}>
-                <div>
+                <div className="form-group">
                     <label htmlFor="usernameOrEmail">Username/Email:</label>
                     <input
                         type="text"
@@ -30,7 +31,7 @@ const LoginPage = () => {
                         onChange={(e) => setUsernameOrEmail(e.target.value)}
                     />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="password">Password:</label>
                     <input
                         type="password"
@@ -39,8 +40,8 @@ const LoginPage = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <div>
-                    <button type="submit">Login</button>
+                <div className="form-group">
+                    <button type="submit" className="submit-button">Login</button>
                 </div>
             </form>
         </div>
