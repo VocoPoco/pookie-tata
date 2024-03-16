@@ -26,10 +26,10 @@ const NavBar = () => {
       </div>
       <div className="menu_container">
         <ul className="menu_items">
-          <li className="item btn1" onClick={() => navigate('/')}>
+          <li className="item btn1" onClick={() => navigate('/Games')}>
             <span className="link-button flex shadow"><i className="bx bx-home-alt"></i><span>Home</span></span>
           </li>
-          <li className="item btn2" onClick={() => navigate('/games')}>
+          <li className="item btn2" onClick={() => navigate('/')}>
             <span className="link-button flex shadow"><i className="bx bx-grid-alt"></i><span>Games</span></span>
           </li>
           <li className="item btn3" onClick={() => navigate('/aboutus')}>

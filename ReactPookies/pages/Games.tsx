@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
   
   // Example logged-in state, replace with your actual authentication logic
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   const handleIconClick = (internalPath: string, externalUrl?: string) => {
     if (!isLoggedIn) {
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         src={lolLogo}
         className="logo LOL"
         alt="League of Legends logo"
-        onClick={() => handleIconClick('/')}
+        onClick={() => handleIconClick('/Games')}
         style={{ cursor: 'pointer' }}
       />
       <img

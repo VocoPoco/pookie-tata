@@ -12,10 +12,10 @@ root.render(
     <React.StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} /> {}
+          <Route path="/" element={<Games />} /> {}
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<LoginPage />} /> {}
-          <Route path="games/" element={<Games />} /> {}
+          <Route path="games/" element={<App />} /> {}
           <Route path="aboutus/" element={<AboutUs />} /> {}
 
         </Routes>
