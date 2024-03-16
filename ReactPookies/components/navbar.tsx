@@ -1,8 +1,24 @@
-import { Link } from "react-router-dom";
-import "./navbar.css"; // Ensure this CSS file includes all the styles you shared
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './navbar.css'; // Make sure this CSS file includes all the styles you need
 
 const NavBar = () => {
-  let CoinsAmount = 9999;
+  const [coinsAmount, setCoinsAmount] = useState(0); // Initialize coins amount with useState
+  const navigate = useNavigate();
+
+  // Function to increment coins amount by 100
+  const incrementCoins = () => {
+    setCoinsAmount(coinsAmount + 100);
+  };
+
+  const handleIconClick = (internalPath: string, externalUrl?: string) => {
+    if (externalUrl) {
+      window.open(externalUrl, '_blank'); // Open external link in new tab
+    } else {
+      navigate(internalPath); // Navigate internally within the app
+    }
+  };
+
   return (
     <nav className="sidebar">
       <div className="logo_items">
@@ -10,20 +26,17 @@ const NavBar = () => {
       </div>
       <div className="menu_container">
         <ul className="menu_items">
-          <li className="item btn1">
-            <Link to="/" className="link-button flex shadow"><i className="bx bx-home-alt"></i>
-<span>Home</span></Link>
+          <li className="item btn1" onClick={() => navigate('/')}>
+            <span className="link-button flex shadow"><i className="bx bx-home-alt"></i><span>Home</span></span>
           </li>
-          <li className="item btn2">
-            <Link to="/products" className="link-button flex shadow"><i className="bx bx-grid-alt"></i>
-<span>Games</span></Link>
+          <li className="item btn2" onClick={() => navigate('/games')}>
+            <span className="link-button flex shadow"><i className="bx bx-grid-alt"></i><span>Games</span></span>
           </li>
-          <li className="item btn3">
-            <Link to="/about-us" className="link-button flex shadow"><i className="bx bx-id-card"></i>
-<span>About Us</span></Link>
+          <li className="item btn3" onClick={() => navigate('/aboutus')}>
+            <span className="link-button flex shadow"><i className="bx bx-id-card"></i><span>About Us</span></span>
           </li>
-          <li className="item btn4">
-            <Link to="/about-us" className="link-button flex"><i className='bx bxl-bitcoin' ></i><span>{CoinsAmount}</span></Link>
+          <li className="item btn4" onClick={incrementCoins}>
+            <span className="link-button flex"><i className='bx bxl-bitcoin'></i><span>{coinsAmount}</span></span>
           </li>
           {/* Additional links as needed */}
         </ul>

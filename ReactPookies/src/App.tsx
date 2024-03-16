@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import NavBar from '../components/navbar'; // Adjust the import path as necessary
-import RightPanel from '../components/RightPanel';
+import Quests from '../components/Quests';
 import VideoBackground from '../components/VideoBackground';
 import "../components/VideoBackground.css"
 // Optionally import MainContent if you decide to use it
@@ -12,7 +12,7 @@ const App: React.FC = () => {
     < div className="main">
       <NavBar />
       <VideoBackground />
-      <RightPanel />
+      <Quests />
     </div>
   );
 };

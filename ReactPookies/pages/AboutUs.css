@@ -1,0 +1,25 @@
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust based on your spacing preference */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  .team-member-card {
+    width: 300px; /* Adjust based on your card size preference */
+    border: 1px solid #ddd; /* Simple border for the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures content fits within the rounded corners */
+  }
+  
+  .team-member-header {
+    background-color: #f0f0f0; /* Light gray background for the header */
+    padding: 10px; /* Padding within the header */
+    text-align: center; /* Center the header text */
+    font-weight: bold; /* Make the header text bold */
+  }
+  
+  .team-member-body {
+    padding: 10px; /* Padding within the body */
+  }
+  

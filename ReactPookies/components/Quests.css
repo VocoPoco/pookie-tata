@@ -37,7 +37,36 @@
 .daily-quests {
   color: #ffe8d8;
 }
+.animated-list {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 0.5s ease forwards;
+}
 
-.weekly-quests {
-  color:#ffe8d8;
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional styling for list items */
+.animated-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #242424;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.daily-list li strong {
+  color: azure;
+}
+
+.bounty-list li strong {
+  color: rgb(189, 24, 24);
 }

@@ -133,7 +133,10 @@
 }
 
 .link-button:hover span {
-  transform: scale(1.1); /* Adjust scale value as desired */
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+}
+.link-button span {
   transition: transform 0.3s ease-in-out;
 }
 
