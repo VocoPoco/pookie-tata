@@ -12,7 +12,6 @@ const LoginPage = () => {
         try {
             const response = await login({ usernameOrEmail, password });
             console.log('Login successful:', response);
-            navigate('/home'); // Navigate to home or any page you consider after login
         } catch (error) {
             console.error('Login failed:', error);
             // Handle login failure (e.g., showing an error message to the user)
