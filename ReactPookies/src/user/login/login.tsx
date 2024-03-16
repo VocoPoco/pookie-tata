@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { login } from '../../util/ApiUtils';
-import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
     const [usernameOrEmail, setUsernameOrEmail] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate();
 
     const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault(); // Prevent form from causing a page reload
