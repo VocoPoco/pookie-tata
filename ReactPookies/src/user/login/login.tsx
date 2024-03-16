@@ -6,7 +6,6 @@ import './login.css'; // Import your CSS file
 const LoginPage = () => {
     const [usernameOrEmail, setUsernameOrEmail] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate();
 
     const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault(); // Prevent form from causing a page reload
